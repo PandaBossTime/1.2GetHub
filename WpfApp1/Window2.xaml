@@ -5,8 +5,69 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Window1" Height="668" Width="996">
+        Title="Window1" Height="450" Width="300">
+   
+
+
     <Grid>
-        
-    </Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="103*"/>
+            
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.ColumnSpan="2" Background="Black">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBox Name="txtDisplay" Grid.Row="0" Margin="10,10,10,10" FontSize="24"
+                       TextAlignment="Right" IsReadOnly="True" Background="DarkCyan"/>
+            <Grid Grid.Row="1" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Name="btn7" Content="7" Grid.Row="1" Grid.Column="0" Background="DarkSeaGreen"/>
+                <Button Name="btn4" Content="4" Grid.Row="2" Grid.Column="0" Background="DarkSeaGreen"/>
+                <Button Name="btn1" Content="1" Grid.Row="3" Grid.Column="0" Background="DarkSeaGreen"/>
+                <Button Name="btn8" Content="8" Grid.Row="1" Grid.Column="1" Background="DarkSeaGreen"/>
+
+                <Button Name="btn5" Content="5" Grid.Row="2" Grid.Column="1" Background="DarkSeaGreen"/>
+                <Button Name="btn2" Content="2" Grid.Row="3" Grid.Column="1" Background="DarkSeaGreen"/>
+                <Button Name="btn9" Content="9" Grid.Row="1" Grid.Column="2" Background="DarkSeaGreen"/>
+
+                <Button Name="btn6" Content="6" Grid.Row="2" Grid.Column="2" Background="DarkSeaGreen"/>
+                <Button Name="btn3" Content="3" Grid.Row="3" Grid.Column="2" Background="DarkSeaGreen"/>
+                <Button Name="btn0" Content="0" Grid.Row="4" Grid.ColumnSpan="2" Background="DarkCyan"/>
+
+
+                <Button Name="btnDel" Content="/" Grid.Row="0" Grid.Column="3" Background="DarkSeaGreen"/>
+                <Button Name="btnMulti" Content="*" Grid.Row="1" Grid.Column="3" Background="SeaGreen"/>
+                <Button Name="btnMin" Content="-" Grid.Row="2" Grid.Column="3" Background="DarkCyan"/>
+
+                <Button Name="btnPlus" Content="+" Grid.Row="3" Grid.Column="3" Background="DarkCyan"/>
+                <Button Name="btnRavn" Content="=" Grid.Row="4" Grid.Column="3" Background="Cyan"/>
+                <Button Name="btnPoint" Content="." Grid.Row="4" Grid.Column="2" Background="White"/>
+
+                <Button Name="btnDelet" Content="Del" Grid.Row="0" Grid.Column="2" Background="SeaGreen"/>
+                <Button Name="btnPercent" Content="%" Grid.Row="0" Grid.Column="1" Background="DarkCyan"/>
+                <Button Name="btnClear" Content="C" Grid.Row="0" Grid.Column="0" Background="Cyan"/>
+            </Grid>
+           
+        </Grid>
+       <Grid>
+           
+            <Grid/>
+        </Grid>
+        </Grid>
 </Window>

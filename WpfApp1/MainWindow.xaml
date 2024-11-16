@@ -7,21 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Height="85" Margin="454,151,0,0" VerticalAlignment="Top" Width="146"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="85" Margin="454,151,0,0" VerticalAlignment="Top" Width="146" Click="Button_Click_1"/>
         <Menu Height="25" VerticalAlignment="top">
             <MenuItem Header="Файл" Height="25">
                 <MenuItem.Icon>
                     <Image Source="\\sysprofiles.adm.vvsu.ru\STUDENTRPROFILES$\PandaBossTime\My Pictures\d.jpg"></Image>
                 </MenuItem.Icon>
-                <MenuItem Header="Открыть">
-                    <MenuItem Header="Файл 1" Click="MenuItem_Click_1"></MenuItem>
-                    <MenuItem Header="Файл 2" Click="MenuItem_Click_2"></MenuItem>
+                <MenuItem Header="Открыть" Click="MenuItem_Click_1">
+                   
+                    
                 </MenuItem>
                 <MenuItem Header="Сохранить"></MenuItem>
                 <MenuItem Header="Выйти" Click="MenuItem_Click"></MenuItem>
             </MenuItem>
         </Menu>
         <Image Name="DisplayImage" HorizontalAlignment="Left" Height="222" Margin="98,98,0,0" VerticalAlignment="Top" Width="282"/>
+        <TextBox Name="Box" HorizontalAlignment="Left" Height="23" Margin="77,325,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="77,369,0,0" TextWrapping="Wrap" Text="Ты хххххххху..рящик" VerticalAlignment="Top" Height="28" Width="220"/>
 
     </Grid>
 </Window>
